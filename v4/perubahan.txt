@@ -1,0 +1,7 @@
+Senin 20 Desember 2021
+- Merapihkan css dibagian link List
+- Mengubah fitur search title menjadi live search //done
+- Menambahkan fitur sorting dengan jquery //done
+
+- Menambahkan fitur verifikasi email
+- Menambahkan fitur lupa password
