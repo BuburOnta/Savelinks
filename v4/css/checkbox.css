@@ -1,0 +1,60 @@
+.remember {
+    /* border: 1px solid black; */
+    /* height: 200px;
+    width: 400px; */
+    /* position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    margin: 5px 0;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+
+.remember input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    background-color: #d5d5d5;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+}
+
+.remember label {
+    color: #4c4c4c;
+    font-size: 18px;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-weight: 600; */
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.remember input[type="checkbox"]::after {
+    margin: 0;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    display: none;
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.remember input[type="checkbox"]:hover {
+    background-color: #a5a5a5;
+}
+.remember input[type="checkbox"]:checked {
+    background-color: #5bcd3e;
+}
+
+.remember input[type="checkbox"]:checked::after {
+    display: unset;
+}
