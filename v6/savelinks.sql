@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 28 Okt 2021 pada 08.09
+-- Waktu pembuatan: 22 Des 2021 pada 08.09
 -- Versi server: 10.4.19-MariaDB
 -- Versi PHP: 8.0.7
 
@@ -37,6 +37,22 @@ CREATE TABLE `links` (
 -- --------------------------------------------------------
 
 --
+-- Struktur dari tabel `temp_users`
+--
+
+CREATE TABLE `temp_users` (
+  `id` int(11) NOT NULL,
+  `username` varchar(35) NOT NULL,
+  `password` text NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `cookie` text NOT NULL,
+  `code_otp` varchar(10) NOT NULL,
+  `status` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
 -- Struktur dari tabel `users`
 --
 
@@ -46,7 +62,7 @@ CREATE TABLE `users` (
   `username` varchar(16) NOT NULL,
   `password` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `cookie` varchar(255) NOT NULL
+  `cookie` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -59,6 +75,12 @@ CREATE TABLE `users` (
 ALTER TABLE `links`
   ADD PRIMARY KEY (`id_link`),
   ADD KEY `id_user` (`id_user`);
+
+--
+-- Indeks untuk tabel `temp_users`
+--
+ALTER TABLE `temp_users`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indeks untuk tabel `users`
@@ -75,6 +97,12 @@ ALTER TABLE `users`
 --
 ALTER TABLE `links`
   MODIFY `id_link` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT untuk tabel `temp_users`
+--
+ALTER TABLE `temp_users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`
