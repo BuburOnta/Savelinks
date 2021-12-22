@@ -122,7 +122,7 @@ function verification($data)
     global $con;
     $code_otp = $data['verifCode'];
     $username = $_SESSION['tempUser'];
-    $password = password_hash($_SESSION['tempPass'], PASSWORD_DEFAULT);
+    $password = $_SESSION['tempPass'];
     $email = $_SESSION['tempEmail'];
 
     $temp_user = mysqli_query($con, "SELECT * FROM temp_users WHERE username='$username'");
