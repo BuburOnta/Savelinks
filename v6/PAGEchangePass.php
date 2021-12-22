@@ -62,7 +62,7 @@ if (isset($_POST['change'])) {
                         <div class="form-group new-pass">
                             <div class="new">
                                 <label for="new-pass">New Password</label><br>
-                                <input type="password" name="new-pass" id="new-pass" placeholder="your New Password">
+                                <input type="password" name="new-pass" id="new-pass" placeholder="your New Password" autofocus>
                                 <div class="garis1"></div>
                             </div>
 

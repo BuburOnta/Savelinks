@@ -59,7 +59,7 @@ if(isset($_POST['forget'])) {
                             <!-- Email -->
                             <div class="regist-group email" style="margin-bottom: 13px;">
                                 <label for="email">Email</label><br>
-                                <input type="email" name="email" id="email" placeholder="email anda..." value="lah.ontaks@gmail.com">
+                                <input type="email" name="email" id="email" placeholder="email anda..." autofocus>
                             </div>
 
                             <!-- Cari -->

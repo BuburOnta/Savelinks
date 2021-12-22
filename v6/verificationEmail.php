@@ -93,7 +93,7 @@ if( isset($_POST['verification'])) {
                                 <!-- CODE OTP -->
                                 <div class="regist-group username">
                                     <label for="verifCode">Kode verifikasi</label><?//= $error['verifCode'] ?><br>
-                                    <input type="text" name="verifCode" id="verifCode">
+                                    <input type="text" name="verifCode" id="verifCode" autofocus>
                                     <?php if (in_array('verifCode', $error)): ?>
                                         <span class="error">Kode verifikasi tidak boleh kosong</span>
                                     <?php endif; ?>

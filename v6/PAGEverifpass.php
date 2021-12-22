@@ -59,7 +59,7 @@ if(isset($_POST['verif'])) {
                             <!-- CODE OTP -->
                             <div class="regist-group username" style="margin-bottom: 13px;">
                                 <label for="verifCode">Kode verifikasi</label><?//= $error['verifCode'] ?><br>
-                                <input type="text" name="verifCode" id="verifCode" placeholder="cek email anda...">
+                                <input type="text" name="verifCode" id="verifCode" placeholder="cek email anda..." autofocus>
                             </div>
 
                             <!-- Cari -->
