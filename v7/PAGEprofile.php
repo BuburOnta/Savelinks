@@ -117,7 +117,7 @@ if(isset($_GET['logout'])) {
     <!-- profile -->
     <div class="profile">
         <h2>Profile</h2>
-        <form method="POST" action="" class="profileForm">
+        <form method="POST" action="" class="profileForm" autocomplete="off">
             <input type="hidden" name="id" value="<?=$users['id']?>">
             <!-- Nama -->
             <div class="form-group nama">
